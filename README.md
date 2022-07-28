@@ -1,4 +1,3 @@
 # Magic-Navigation-Menu
 
-
-![Screenshot (1054)](https://user-images.githubusercontent.com/100486080/181606252-e7024f2b-a8a8-4a4b-987c-85f6a39fcb26.png)
+![magic](https://user-images.githubusercontent.com/100486080/181606815-f78e54a3-1853-4200-9681-b6f01ad7b2f1.png)
