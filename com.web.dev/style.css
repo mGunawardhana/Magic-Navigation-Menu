@@ -81,9 +81,9 @@ position: relative;
 }
 
 /*setting up image to move up one cursor*/
-.navigation ul li:active a .icon
+.navigation ul li.active a .icon
 {
-    transform: translateY(-35px);
+    transform: translateY(-32px);
 }
 
 .navigation ul li a .text
@@ -98,7 +98,7 @@ position: relative;
     transform: translateY(20px);
 }
 
-.navigation ul li:active a .text
+.navigation ul li.active a .text
 {
     opacity: 1;
     transform: translateY(10px);
@@ -107,8 +107,42 @@ position: relative;
 .indicator
 {
     position: absolute;
+
+    /*move up green box setup*/
+    top: -50%;
     width: 70px;
     height: 70px;
     background: #29fd53;
 
+    /*green box cycling*/
+    border-radius: 50%;
+
+    border: 6px solid var(--clr);
+    transition: 0.5s;
+}
+
+.indicator::before
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px -10px 0 0 var(--clr);
+}
+
+.indicator::after
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0px -10px 0 0 var(--clr);
 }
